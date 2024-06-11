@@ -7,44 +7,62 @@
     <title>Document</title>
 
     <style>
-        html{
+        html {
             scroll-behavior: smooth;
             font-size: medium;
         }
+
         ul li {
             display: inline-block;
             list-style-type: none;
-            padding: 0.8rem;
+            padding: 1rem;
+            border-radius: 5em;
 
         }
 
         li a {
             display: list-item;
             width: 100%;
-            border-radius: 2rem;
             text-decoration: none;
+            border-radius: 5rem;
         }
 
         li a:hover,
         li a:focus {
-            background: #555;
-            text-decoration: underline;
-            color: antiquewhite;
+            background: #333;
+            text-decoration: none;
+            color: mistyrose;
+        }
+
+        a{
+            text-decoration: none;
+
         }
     </style>
 </head>
 
 <body>
-    <h2>[insert hotel name]</h2>
-    <ul>
-        <li><a href="index.php">HOME</a></li>
-        <li><a href="adminlogin.php">ADMIN</a></li>
-        <li><a href="userlogin.php">USER</a></li>
-        <li><a href="bookings.php">BOOKINGS</a></li>
-        <li><a href="#about">ABOUT</a></li>
-    </ul>
+    
+        <h1>[insert hotel name]</h1>
+        <ul>
+            <li><a href="index.php">HOME</a></li>
+            <li><a href="adminlogin.php">ADMIN</a></li>
+            <li><a href="userlogin.php">USER</a></li>
+            <li><a href="bookings.php">BOOKINGS</a></li>
+            <li><a href="#about">ABOUT</a></li>
+        </ul>
+    
+    
+        <img src="images\hm1.jpg" alt="-">
+    
 
+    <p>
+        <a href="#">Back to top</a>
+    </p>
+    <footer id="about">
+        
 
+    </footer>
 </body>
 
 </html>
