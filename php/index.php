@@ -10,6 +10,14 @@
         html {
             scroll-behavior: smooth;
             font-size: medium;
+            background: ##E9F1F7;
+        }
+
+        header{
+            border-radius: 2.1rem;
+            margin: 0%;
+            padding: 0.5rem;
+            background: #2274A5;
         }
 
         ul li {
@@ -42,7 +50,7 @@
 </head>
 
 <body>
-    
+    <header>
         <h1>[insert hotel name]</h1>
         <ul>
             <li><a href="index.php">HOME</a></li>
@@ -51,9 +59,11 @@
             <li><a href="bookings.php">BOOKINGS</a></li>
             <li><a href="#about">ABOUT</a></li>
         </ul>
+        </header>
     
     
-        <img src="images\hm1.jpg" alt="-">
+        <img src="images\hm 1.jpg" alt="-">
+
     
 
     <p>
