@@ -10,20 +10,8 @@
     <style>
         html {
             background-color: #E9F1F7;
-        }
 
-        ul li {
-            display: inline;
-            padding: 2rem;
-            text-decoration: none;
 
-        }
-
-        .navbar {
-            background-color: #2274A5;
-            padding: 1rem;
-            border-radius: 2rem;
-        }
 
         .button {
             text-align: center;
@@ -39,14 +27,15 @@
 
         }
 
-        .centre {
+        .centre a {
             align-items: center;
             width: auto;
             padding: 1rem;
+            text-decoration:none;
         }
 
         .image {
-            padding-top: rem;
+            padding-top: 2em;
             border-radius: 2rem;
 
         }
@@ -54,7 +43,7 @@
         .hero-image {
             background-image: url("images/hm 11.webp");
             height: 700px;
-            width="100%";
+            width:100%;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -74,29 +63,13 @@
 
         }
 
-        a {
-            padding: 1rem;
-            border-radius: 2rem;
-        }
 
-        a:hover {
-            background-color: #80c3f7;
-        }
     </style>
 </head>
 
 <body>
-    <header class="navbar">
+<?php require'navv/nav.php' ?>
 
-        <h1>[insert hotel name]</h1>
-        <ul>
-            <li><a href="index.php">HOME</a></li>
-            <li><a href="adminlogin.php">ADMIN</a></li>
-            <li><a href="userlogin.php">USER</a></li>
-            <li><a href="bookings.php">BOOKINGS</a></li>
-            <li><a href="#about">ABOUT</a></li>
-        </ul>
-    </header>
     <div style="padding-top: 1rem; padding-bottom: 1rem;">
         <form class="hero-image image" action="">
             <input class="form" type="datetime-local" placeholder="select your check-in date & time">

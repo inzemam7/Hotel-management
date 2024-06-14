@@ -5,6 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Admin Login</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <style>
+      .nav-item a{
+
+        position:relative;
+        margin-left:25px;
+        
+        
+      }
+
+
+      .nav-item a::after{
+        content:'';
+        position:absolute;
+        left:0;
+        bottom:6px;
+        width:100%;
+        height:1.5px;
+        background:#fff;
+        border-radius:5px;
+        transform:scaleX(0);
+        transition:transform .5s;
+      }
+
+
+      .nav-item a:hover::after{
+        transform:scaleX(1);
+
+      }
+
+    </style>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Hotel name</a>
