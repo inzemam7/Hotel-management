@@ -1,43 +1,42 @@
 <!doctype html>
 <html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Admin Login</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
     <style>
-       html {
-            background-color: #E9F1F7;
-        }
-      .navbar1 {
-            background-color: #2274C9;
-        }
-        a {
-            padding: .3rem;
-            border-radius: 2rem;
-            color: #e7dfc6;
-            text-decoration: none;
-            margin: 20px 10px 0 20px;
-        }
+      .nav-item a{
 
-        a:hover {
-            background-color: #E9F1F7;
-            color: #816C61;
-        }
+        position:relative;
+        margin-left:25px;
+        
+        
+      }
 
-        .footer {
-            background-color: #2274C9;
-            padding: 1rem;
-            border-radius: 0rem;
 
-        }
+      .nav-item a::after{
+        content:'';
+        position:absolute;
+        left:0;
+        bottom:6px;
+        width:100%;
+        height:1.5px;
+        background:#fff;
+        border-radius:5px;
+        transform:scaleX(0);
+        transition:transform .5s;
+      }
+
+
+      .nav-item a:hover::after{
+        transform:scaleX(1);
+
+      }
 
     </style>
-</head>
-</body>
-<nav class="navbar navbar-expand-lg navbar-dark navbar1">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
   <h3>[insert hotel name]</h3>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"

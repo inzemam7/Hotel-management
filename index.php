@@ -44,10 +44,11 @@
 
         }
 
-        .centre {
+        .centre a {
             align-items: center;
             width: 145px;
             padding: 1rem;
+            text-decoration:none;
         }
 
         .image {
