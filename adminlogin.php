@@ -42,8 +42,7 @@
         }
 
         .cont{
-            margin-top:140px;
-            margin-left:550px;
+            margin: 100px auto;
             padding-left:50px;
             padding-right:50px;
             position: relative;    
@@ -60,20 +59,33 @@
             padding-top:20px;
         }
         .submit{
-            width:100%;
-            height:45px;
+           
             background:black;
             color:white;
-            border:none;
+            
             outline:none;
             border-radius:6px;
             cursor:pointer;
-            font-size:1em;
-            font-weight:500;
+           
         }
         .submit:hover{
             background-color:gray;
             color:black;
+        }
+
+        .button {
+          
+            text-align: center;
+            padding: 1rem;
+            cursor:pointer;
+            border-radius: 1.5rem;
+            background-color: #816C61;
+            margin: 10px auto;
+            width: 300px;
+        }
+
+        .button:hover{
+          background-color: #E7DFC6;
         }
         
         
@@ -87,7 +99,7 @@
   <?php require'navv/nav.php' ?>
 
 <div class="cont">   
-    <h1>LOGIN!</h1>
+    <h1> ADMIN LOGIN</h1>
 
     <form class="log" action="userlogin.php" method="Post" name="myform" onsubmit="return validateform()">
   <div class="mb-3">
@@ -100,9 +112,13 @@
     <input type="password" class="form-control" id="exampleInputPassword1" name="password">
   </div>
 
-  <button type="submit" value="submit" class="submit">Submit</button>
+  <button type="submit" value="submit" class="button">Submit</button>
 </form>
 </div>
+<footer class="footer" id="about">
+
+
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>

@@ -37,14 +37,14 @@
         }
 
         .cont{
-            margin-top:140px;
-            margin-left:550px;
+            margin: 100px auto;
             padding-left:50px;
             padding-right:50px;
             position: relative;    
             width: 400px;
             height: 400px;
             background: transparent;
+            color: #e9f1f7
             border: 2px solid rgba(255, 255, 255, .5);
             border-radius: 20px;
             backdrop-filter: blur (20px);
@@ -70,19 +70,28 @@
             background-color:gray;
             color:black;
         }
+
+        .button {
+            text-align: center;
+            padding: 1rem;
+            border-radius: 1.5rem;
+            background-color: #816C61;
+            margin: 10px auto;
+            width: 300px;
+        }
+
+        .button:hover{
+          background-color: #E7DFC6;
+        }
         
        
 
     </style>
   </head>
   <body>
-
-
-
   <?php require'navv/nav.php' ?>
-
 <div class="cont">   
-    <h1>LOGIN!</h1>
+    <h1> USER LOGIN</h1>
 
     <form class="log" action="userlogin.php" method="Post" name="myform" onsubmit="return validateform()">
   <div class="mb-3">
@@ -95,9 +104,13 @@
     <input type="password" class="form-control" id="exampleInputPassword1" name="password">
   </div>
 
-  <button type="submit" value="submit" class="submit">Submit</button>
+  <button type="submit" value="submit" class="button">Submit</button>
 </form>
 </div>
+<footer class="footer" id="about">
+
+
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
