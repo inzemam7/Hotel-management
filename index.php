@@ -100,6 +100,15 @@
             color: #816C61;
         }
 
+        .anc{
+            padding: 0.1rem;
+            border-radius: 0.5rem;
+        }
+
+        .anc.hover{
+
+        }
+
         .col {
         float: left;
         width: 33.33%;
@@ -171,17 +180,17 @@
 
             <div class="col p-4">
                 <h5 class="mb-3">Links</h5>
-                <a href="#" style="color:black">Home</a><br>
-                <a href="#" style="color:black">Rooms</a><br>
-                <a href="#" style="color:black">Contact</a><br>
-                <a href="#" style="color:black">About Us</a><br>
+                <a class="anc" href="#" style="color:black">Home</a><br>
+                <a class="anc" href="#" style="color:black">Rooms</a><br>
+                <a class="anc" href="#" style="color:black">Contact</a><br>
+                <a class="anc" href="#" style="color:black">About Us</a><br>
             </div>
 
             <div class="col p-4">
                 <h5>Follow us</h5>
-                <a href="#" style="color:black"> <i class="bi bi-twitter me-1"></i>Twitter</a><br>
-                <a href="#" style="color:black"> <i class="bi bi-facebook me-1"></i>Facebook</a><br>
-                <a href="#" style="color:black"> <i class="bi bi-instagram me-1"></i>Instgram</a><br>
+                <a class="anc" href="#" style="color:black"> <i class="bi bi-twitter me-1"></i>Twitter</a><br>
+                <a class="anc" href="#" style="color:black"> <i class="bi bi-facebook me-1"></i>Facebook</a><br>
+                <a class="anc" href="#" style="color:black"> <i class="bi bi-instagram me-1"></i>Instgram</a><br>
             </div>
         </div>
 
