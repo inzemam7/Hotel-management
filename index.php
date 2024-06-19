@@ -78,7 +78,7 @@
             align-items: center;
             padding-top: .7rem;
             width: 300px;
-            height: ;
+            height:40px ;
             text-align: center;
             background-color: #e7dfc6;
             border-radius: 2rem;
@@ -159,6 +159,7 @@
         <a href="#">Back to top</a>
     </div>
     <footer class="footer" id="about">
+        <h2 style="text-align:center">About Us</h2>
         <div class="row">
             <div class="col p-4">
                 <h3>Hotel name</h3>
@@ -182,10 +183,6 @@
                 <a href="#" style="color:black"> <i class="bi bi-facebook me-1"></i>Facebook</a><br>
                 <a href="#" style="color:black"> <i class="bi bi-instagram me-1"></i>Instgram</a><br>
             </div>
-
-
-
-            
         </div>
 
 
