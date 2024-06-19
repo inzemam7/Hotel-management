@@ -3,8 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>User Login</title>
+    <title>Login</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+
     <script>
         function validateform()
         {
@@ -13,7 +16,7 @@
 
             if(email==""||password=="")
             {
-                alert("Name or password can't be empty ");
+                alert("Email or password can't be empty ");
                 return false;
             }
             else if(password.length<6)
@@ -25,11 +28,14 @@
         }
 
     </script>
+
+
     <style>
         *{
             margin:0;
             padding:0;
             box-sizing:border-box;
+            
         }
         h1{
             text-align:center;
@@ -44,27 +50,25 @@
             width: 400px;
             height: 400px;
             background: transparent;
-            color: #e9f1f7
             border: 2px solid rgba(255, 255, 255, .5);
             border-radius: 20px;
             backdrop-filter: blur (20px);
             box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+            
             
         }
         .log{
             padding-top:20px;
         }
         .submit{
-            width:100%;
-            height:45px;
+           
             background:black;
             color:white;
-            border:none;
+            
             outline:none;
             border-radius:6px;
             cursor:pointer;
-            font-size:1em;
-            font-weight:500;
+           
         }
         .submit:hover{
             background-color:gray;
@@ -72,8 +76,10 @@
         }
 
         .button {
+          
             text-align: center;
             padding: 1rem;
+            cursor:pointer;
             border-radius: 1.5rem;
             background-color: #816C61;
             margin: 10px auto;
@@ -83,17 +89,22 @@
         .button:hover{
           background-color: #E7DFC6;
         }
+
+
         
-       
+        
 
     </style>
   </head>
   <body>
+
+
+
   <?php require'navv/nav.php' ?>
 <div class="cont">   
-    <h1> USER LOGIN</h1>
+    <h1>  LOGIN!</h1>
 
-    <form class="log" action="userlogin.php" method="Post" name="myform" onsubmit="return validateform()">
+    <form class="log" action="login.php" method="Post" name="myform" onsubmit="return validateform()">
   <div class="mb-3">
     <label for="email" class="form-label">Email address</label>
     <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
@@ -108,6 +119,7 @@
 </form>
 </div>
 <footer class="footer" id="about">
+
 
 
     </footer>
