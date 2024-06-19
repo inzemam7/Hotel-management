@@ -13,6 +13,13 @@
         margin-left:25px;  
       }
 
+      .navbar {
+            background-color: #2274C9;
+            color:black;
+    
+
+        }
+
 
       .nav-item a::after{
         content:'';
@@ -21,7 +28,7 @@
         bottom:6px;
         width:100%;
         height:1.5px;
-        background:#fff;
+        background:black;
         border-radius:5px;
         transform:scaleX(0);
         transition:transform .5s;
@@ -34,40 +41,35 @@
       }
 
     </style>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
-  <h3>[insert hotel name]</h3>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand" href="index.php">Hotel name</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="" aria-current="page" href="index.php">Home</a>
+          <a class="nav-link active" aria-current="page" href="index.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="" href="adminlogin.php  ">admin Login</a>
+          <a class="nav-link" href="rooms.php ">Rooms</a>
         </li>
         <li class="nav-item">
-          <a class="" href="userlogin.php">User Login</a>
+          <a class="nav-link" href="#contact">Contact</a>
         </li>
         <li class="nav-item">
-          <a class="" href="booking.php">Bookings</a>
-        </li>
-        <li class="nav-item">
-          <a class="" href="#about">About Us</a>
+          <a class="nav-link" href="#about">About Us</a>
         </li>
       </ul>
       <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn" type="submit" style="padding: 0.5rem; border-radius: 2rem; background-color: #E9F1F7;">Search</button>
+        <button class="btn btn-outline-dark shadow-none me-lg-3 me-3" type="submit" ><a class="nav-link" href="login.php"> Login</a></button>
+        <button class="btn btn-outline-dark" type="submit"><a class="nav-link" href="registration.php">Register</a></button>
       </form>
     </div>
   </div>
-</nav>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
 
+</nav> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
 </html>
