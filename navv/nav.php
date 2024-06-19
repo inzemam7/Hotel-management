@@ -10,9 +10,7 @@
       .nav-item a{
 
         position:relative;
-        margin-left:25px;
-        
-        
+        margin-left:25px;  
       }
 
 
