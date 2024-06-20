@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Option 1: Include in HTML -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>Document</title>
@@ -41,6 +41,16 @@
             width: 145px;
         }
 
+        .buttonH{
+            text-align: center;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            background-color: #816C61;
+            margin: 10px auto ;
+            width: 370px;
+            height: 50px;
+        }
+
         .footer {
             background-color: #2274C9;
             padding: 1rem;
@@ -60,7 +70,7 @@
             height: 400px;
             width: 600px;
             padding: 0.5rem;
-            
+
 
         }
 
@@ -78,7 +88,7 @@
             align-items: center;
             padding-top: .7rem;
             width: 300px;
-            height:40px ;
+            height: 40px;
             text-align: center;
             background-color: #e7dfc6;
             border-radius: 2rem;
@@ -100,25 +110,43 @@
             color: #816C61;
         }
 
-        .anc{
+        .anc {
             padding: 0.1rem;
             border-radius: 0.5rem;
         }
 
-        .anc.hover{
-
-        }
+        .anc.hover {}
 
         .col {
-        float: left;
-        width: 33.33%;
-        padding: 10px;
+            float: left;
+            width: 33.33%;
+            padding: 10px;
         }
 
         .row:after {
-        content: "";
-        display: table;
-        clear: both;
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        #hotelspage {
+            display: inline-block;
+            height: 450px;
+            width: 100%;
+            padding: 1rem;
+            border-radius: 2rem;
+            background-color: #e7dfc6
+        }
+
+        #hotel{
+            height: 90%;
+            background-color: #E9F1F7;
+            width: 30%;
+            padding: 10px;
+            margin-left: 20px;
+            border-radius: 0.5rem;
+            display: inline-block;
+
         }
 
         @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
@@ -137,9 +165,11 @@
             <li><a href="#about">ABOUT US </a></li>
         </ul>
         <form class="d-flex" role="search">
-        <button class="btn btn-outline-dark shadow-none me-lg-3 me-3" type="submit" ><a class="btn" href="login.php"> Login</a></button>
-        <button class="btn btn-outline-dark" type="submit"><a class="btn" href="registration.php">Register</a></button>
-      </form>
+            <button class="btn btn-outline-dark shadow-none me-lg-3 me-3" type="submit"><a class="btn" href="login.php">
+                    Login</a></button>
+            <button class="btn btn-outline-dark" type="submit"><a class="btn"
+                    href="registration.php">Register</a></button>
+        </form>
     </header>
     <div style="padding-top: 2rem; padding-bottom: 1rem;">
         <form class="" action="">
@@ -162,8 +192,23 @@
         </l>
     </div>
 
-    
+    <div id="hotelspage">
+        <h3>Celebrate your holidays at the best hotels</h3>
+        <div id="hotel">
+            <img src="images/hm 1.jpg" alt="hotel 1" width="370px" height="300px">
+            <button class="buttonH"><a  class="anc" href="rooms.php">Book Now</a></button>
+        </div>
 
+        <div id="hotel">
+            <img src="images/hm h 1.jpg" alt="hotel 2" alt="hotel 1" width="370px" height="300px">
+            <button class="buttonH"><a  class="anc" href="rooms.php">Book Now</a></button>
+        </div>
+
+        <div id="hotel">
+            <img src="images/hm h 2.jpg" alt="hotel 3" alt="hotel 1" width="370px" height="300px">
+            <button class="buttonH"><a  class="anc" href="rooms.php">Book Now</a></button>
+        </div>
+    </div>
     <div class="centre button">
         <a href="#">Back to top</a>
     </div>
@@ -173,7 +218,7 @@
             <div class="col p-4">
                 <h3>Hotel name</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Quisquam, nihil! Cum voluptate ipsum itaque aliquid ab fuga explicabo 
+                    Quisquam, nihil! Cum voluptate ipsum itaque aliquid ab fuga explicabo
                     dolorum repellendus similique nisi earum iste esse ea,
                     aperiam iusto veniam molestias.</p>
             </div>
