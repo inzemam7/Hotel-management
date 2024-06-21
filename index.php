@@ -94,8 +94,6 @@
             border-radius: 2rem;
             margin: 9% auto auto auto;
             box-shadow: 0 0 30px rgba(0, 0, 0, .5);
-
-
         }
 
         a {
@@ -195,18 +193,18 @@
     <div id="hotelspage">
         <h3>Celebrate your holidays at the best hotels</h3>
         <div id="hotel">
-            <img src="images/hm 1.jpg" alt="hotel 1" width="370px" height="300px">
-            <button class="buttonH"><a  class="anc" href="rooms.php">Book Now</a></button>
+            <img src="images/hm h 1.jpg" alt="hotel 1" width="370px" height="300px">
+            <button class="buttonH"><a  class="anc" href="1star-rooms.php">BOOK A 1-STAR HOTEL</a></button>
         </div>
 
         <div id="hotel">
-            <img src="images/hm h 1.jpg" alt="hotel 2" alt="hotel 1" width="370px" height="300px">
-            <button class="buttonH"><a  class="anc" href="rooms.php">Book Now</a></button>
+            <img src="images/hm 1.jpg" alt="hotel 2" alt="hotel 1" width="370px" height="300px">
+            <button class="buttonH"><a  class="anc" href="3star-rooms.php">BOOK A 3-STAR HOTEL</a></button>
         </div>
 
         <div id="hotel">
-            <img src="images/hm h 2.jpg" alt="hotel 3" alt="hotel 1" width="370px" height="300px">
-            <button class="buttonH"><a  class="anc" href="rooms.php">Book Now</a></button>
+            <img src="images/hm 3.webp" alt="hotel 3" alt="hotel 1" width="370px" height="300px">
+            <button class="buttonH"><a  class="anc" href="5star-rooms.php">BOOK A 5-STAR HOTEL</a></button>
         </div>
     </div>
     <div class="centre button">
