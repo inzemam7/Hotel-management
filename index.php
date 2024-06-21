@@ -161,6 +161,7 @@
         <ul>
             <li><a href="index.php">HOME</a></li>
             <li><a href="rooms.php">ROOMS</a></li>
+            <li><a href="admin/adminlogin.php">ADMIN</a></li>
             <li><a href="#contact">CONTACT</a></li>
             <li><a href="#about">ABOUT US </a></li>
         </ul>
