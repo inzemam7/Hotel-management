@@ -223,10 +223,10 @@
 
             <div class="col p-4">
                 <h5 class="mb-3">Links</h5>
-                <a class="anc" href="#" style="color:black">Home</a><br>
-                <a class="anc" href="#" style="color:black">Rooms</a><br>
-                <a class="anc" href="#" style="color:black">Contact</a><br>
-                <a class="anc" href="#" style="color:black">About Us</a><br>
+                <a class="anc" href="index.php" style="color:black">Home</a><br>
+                <a class="anc" href="rooms.php" style="color:black">Rooms</a><br>
+                <a class="anc" href="#Contact" style="color:black">Contact</a><br>
+                <a class="anc" href="#About" style="color:black">About Us</a><br>
             </div>
 
             <div class="col p-4">
