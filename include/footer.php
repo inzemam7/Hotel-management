@@ -9,12 +9,15 @@
 
     <style>
 
+
         .footer 
         {
         background-color: #2274C9;
         padding: 1rem;
         border-radius: 0rem;
         }
+
+        
     </style>
   </head>
   <body><footer class="footer" id="about">
