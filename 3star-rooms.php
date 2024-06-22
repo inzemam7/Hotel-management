@@ -59,9 +59,6 @@
             <div class="col-md-4">
               <img src="images/hm b1.jpg" class="card-img" alt="..." height="135px">
             </div>
-            <div class="col-md-2">
-              <img src="" class="card-img" alt="...">
-            </div>
             <div class="col-md-6">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
@@ -70,14 +67,15 @@
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
               </div>
             </div>
+            <div class="col-md-2">
+              <img src="" class="card-img" alt="...">
+            </div>
+            
 
             <div class="row no-gutters p-3 aline-items-center">
             <div class="col-md-4">
               <img src="images/hm b2.jpg" class="card-img" alt="..." height="135px">
             </div>
-            <div class="col-md-2">
-              <img src="..." class="card-img" alt="...">
-            </div>
             <div class="col-md-6">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
@@ -86,14 +84,15 @@
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
               </div>
             </div>
+            <div class="col-md-2">
+              <img src="..." class="card-img" alt="...">
+            </div>
+            
 
             <div class="row no-gutters p-3 aline-items-center">
             <div class="col-md-4">
               <img src="images/hm L1.jpg" class="card-img" alt="..." height="135px">
             </div>
-            <div class="col-md-2">
-              <img src="..." class="card-img" alt="...">
-            </div>
             <div class="col-md-6">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
@@ -102,6 +101,10 @@
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
               </div>
             </div>
+            <div class="col-md-2">
+              <button class="card-img "  >BOOK NOW</button>
+            </div>
+            
 
           </div>
         </div>
