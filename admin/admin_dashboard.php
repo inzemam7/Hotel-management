@@ -1,5 +1,6 @@
 <?php 
  require('extra.php');
+ 
  ?>
 <!doctype html>
 <html lang="en">
