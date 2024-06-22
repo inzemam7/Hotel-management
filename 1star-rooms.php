@@ -7,12 +7,27 @@
   <title>Rooms</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+      .button {
+            text-align: center;
+            padding: 0.5rem;
+            border-radius: 1rem;
+            background-color: #816C61;
+            margin: 30px auto;
+            width: 115px;
+        }
+
+        .button:hover{
+          background-color: #e7dfc6;
+        }
+    </style>
 </head>
 
 <body>
   <?php require 'navv/nav.php' ?>
 
-  <h2 class="mt-3" style="text-align:center">OUR ROOMS</h2>
+  <h2 class="mt-3" style="text-align:center">OUR 1-STAR HOTEL ROOMS</h2>
   <div class="container mb-5" style="display:inline-block;vertical-align:top;">
     <div class="row">
       <div class="col-lg-3">
@@ -59,6 +74,7 @@
             <div class="col-md-4">
               <img src="images/hm e1.jpg" class="card-img" alt="..." height="135px">
             </div>
+
             <div class="col-md-6">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
@@ -66,9 +82,10 @@
                   content. This content is a little bit longer.</p>
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
               </div>
+
             </div>
             <div class="col-md-2">
-              <img src="" class="card-img" alt="...">
+              <button class="button">BOOK NOW</button>
             </div>
             
 
@@ -76,6 +93,7 @@
             <div class="col-md-4">
               <img src="images/hm e2.jpg" class="card-img" alt="..." height="135px">
             </div>
+
             <div class="col-md-6">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
@@ -84,8 +102,9 @@
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
               </div>
             </div>
+
             <div class="col-md-2">
-              <img src="..." class="card-img" alt="...">
+            <button class="button" style="margin-left:22px;">BOOK NOW</button>
             </div>
             
 
@@ -93,6 +112,7 @@
             <div class="col-md-4">
               <img src="images/hm L2.jpg" class="card-img" alt="..." height="135px">
             </div>
+
             <div class="col-md-6">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
@@ -101,8 +121,9 @@
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
               </div>
             </div>
+
             <div class="col-md-2">
-              <img src="..." class="card-img" alt="...">
+            <button class="button" style="margin-left:45px;">BOOK NOW</button>
             </div>
             
 
