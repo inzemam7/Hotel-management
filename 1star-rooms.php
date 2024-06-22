@@ -69,7 +69,7 @@
                   content. This content is a little bit longer.</p>
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
               </div>
-            </div> 
+            </div>
 
             <div class="row no-gutters p-3 aline-items-center">
             <div class="col-md-4">
