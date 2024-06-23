@@ -77,9 +77,8 @@
 
             <div class="col-md-6">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
+                <h5 class="card-title">ECONOMIC</h5>
+                <p class="card-text">Single Room: A compact, single-occupancy space with basic furnishings and shared or en-suite bathroom options, ideal for solo travelers on a budget.</p>
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
               </div>
 
@@ -96,9 +95,8 @@
 
             <div class="col-md-6">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
+                <h5 class="card-title">STANDARD</h5>
+                <p class="card-text">Double Room: A simple room featuring a double bed or twin beds, suitable for one or two guests seeking affordable accommodation with essential amenities.</p>
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
               </div>
             </div>
@@ -115,9 +113,8 @@
 
             <div class="col-md-6">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
+                <h5 class="card-title">DELUXE</h5>
+                <p class="card-text">Family Room: A larger room accommodating families with multiple beds, designed to offer basic comfort and convenience for budget-conscious travelers exploring together.</p>
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
               </div>
             </div>

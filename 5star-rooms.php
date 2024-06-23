@@ -71,13 +71,12 @@
         <div class="card mb-4 border-0 shadow">
           <div class="row no-gutters p-3 aline-items-center" >
             <div class="col-md-4">
-              <img src="images/hm e3.jpg" class="card-img" alt="..." height="135px">
+              <img src="images/PRE.jpeg" class="card-img" alt="..." height="135px">
             </div>
             <div class="col-md-6">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
+                <h5 class="card-title">PRESIDENTIAL SUITE</h5>
+                <p class="card-text">An opulent accommodation featuring multiple rooms, private dining and living areas, a grand bathroom, and often exclusive services like a personal butler.</p>
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
               </div>
             </div>
@@ -88,13 +87,12 @@
 
             <div class="row no-gutters p-3 aline-items-center">
             <div class="col-md-4">
-              <img src="images/hm b3.jpg" class="card-img" alt="..." height="135px">
+              <img src="images/PEN.jpeg" class="card-img" alt="..." height="135px">
             </div>
             <div class="col-md-6">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
+                <h5 class="card-title">PENTHOUSE SUITE</h5>
+                <p class="card-text">Located on the top floor, this suite offers breathtaking views, luxurious furnishings, a private terrace, and high-end amenities such as a Jacuzzi and a fully-equipped kitchen.</p>
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
               </div>
             </div>
@@ -109,9 +107,8 @@
             </div>
             <div class="col-md-6">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
+                <h5 class="card-title">ROYAL SUITE</h5>
+                <p class="card-text">Designed for royalty, this suite includes lavish interiors, state-of-the-art technology, a grand piano, and access to a private elevator and personal security services.</p>
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
               </div>
             </div>

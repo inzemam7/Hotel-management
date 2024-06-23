@@ -75,9 +75,8 @@
             </div>
             <div class="col-md-6">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
+                <h5 class="card-title">SUPERIOR</h5>
+                <p class="card-text">An upgraded option with stylish decor, a spacious layout, and added perks like a coffee maker and complimentary toiletries.</p>
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
               </div>
             </div>
@@ -92,9 +91,8 @@
             </div>
             <div class="col-md-6">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
+                <h5 class="card-title">BUSINESS</h5>
+                <p class="card-text">Room tailored for business travelers, equipped with a work desk, high-speed internet, and convenient access to conference facilities.</p>
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
               </div>
             </div>
@@ -109,9 +107,8 @@
             </div>
             <div class="col-md-6">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
+                <h5 class="card-title">EXECUTIVE SUITE</h5>
+                <p class="card-text">A luxurious choice featuring a separate living area, premium bedding, and exclusive access to a private lounge or concierge services.</p>
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
               </div>
             </div>

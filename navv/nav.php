@@ -54,7 +54,13 @@
           <a class="nav-link active" aria-current="page" href="index.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="rooms.php ">Rooms</a>
+          <a class="nav-link" href="1star-rooms.php">1 Star Rooms</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="3star-rooms.php">3 Star Rooms</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="5star-rooms.php">5 Star Rooms</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#contact">Contact</a>
