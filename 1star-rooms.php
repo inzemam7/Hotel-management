@@ -28,7 +28,7 @@
   <?php require 'navv/nav.php' ?>
 
   <h2 class="mt-3" style="text-align:center">OUR 1-STAR HOTEL ROOMS</h2>
-  <div class="container mb-5" style="display:inline-block;vertical-align:top;">
+  <div class=" mb-5" style="display:inline-block;vertical-align:top; width: fit-content; align-items: center;">
     <div class="row">
       <div class="col-lg-3">
         <nav class="navbar navbar-expand-lg navbar-light bg-white rounded ">
@@ -68,7 +68,7 @@
           </div>
       </div>
       </nav>
-      <div class="col-lg-9 col-md-12 px-4" style="background-color: #e9f1f7;">
+      <div class="col-lg-9 col-md-12 px-4" style="background-color: #e9f1f7; width:70%;">
         <div class="card mb-4 border-0 shadow">
           <div class="row no-gutters p-3 aline-items-center" >
             <div class="col-md-4">

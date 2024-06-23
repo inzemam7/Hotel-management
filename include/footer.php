@@ -15,7 +15,6 @@
         background-color: #2274C9;
         padding: 1rem;
         border-radius: 0rem;
-        width: fit-content;
         }
 
         
