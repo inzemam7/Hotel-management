@@ -17,49 +17,49 @@
     <div class="row">
       <div class="col-lg-3">
         <nav class="navbar navbar-expand-lg navbar-light bg-white rounded ">
-          <div class="container-fluid flex-lg-column align-items-stretch mt-2"
-            style="background-color: #e7dfc6; border-radius: 1rem;">
-            <h4>FILTERS</h4>
+              <div class="container-fluid flex-lg-column align-items-stretch mt-2"
+                style="background-color: #e7dfc6; border-radius: 1rem;">
+                <h4>FILTERS</h4>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#filterdropdown"
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse flex-column align-items-stretch mt-2" id="filterdropdown">
-              <div class="border bg-light p-3 rounded shadow ml-auto">
-                <h5 class="mb-3">CHECK AVAILABILITY</h5>
-                <label class="form-label">Check-in</label>
-                <input type="date" class="form-control shadow none mb-3">
-                <label class="form-label">Check-out</label>
-                <input type="date" class="form-control shadow none">
-              </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#filterdropdown"
+                  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse flex-column align-items-stretch mt-2" id="filterdropdown">
+                  <div class="border bg-light p-3 rounded shadow ml-auto">
+                    <h5 class="mb-3">CHECK AVAILABILITY</h5>
+                    <label class="form-label">Check-in</label>
+                    <input type="date" class="form-control shadow none mb-3">
+                    <label class="form-label">Check-out</label>
+                    <input type="date" class="form-control shadow none">
+                  </div>
 
-              <div class="border bg-light p-3 rounded shadow ml-auto mb-3 mt-3">
-                <h5 class="mb-3">FACILITIES</h5>
-                <div class="mb-2">
-                  <input type="checkbox" id="f1" class="form-check-input shadow-none me-1">
-                  <label class="form-check-label" for="f1">Wifi</label>
-                </div>
-                <div class="mb-2">
-                  <input type="checkbox" id="f2" class="form-check-input shadow-none me-1">
-                  <label class="form-check-label" for="f2">food</label>
-                </div>
-                <div class="mb-2">
-                  <input type="checkbox" id="f3" class="form-check-input shadow-none me-1">
-                  <label class="form-check-label" for="f3">swimmingpool</label>
+                  <div class="border bg-light p-3 rounded shadow ml-auto mb-3 mt-3">
+                    <h5 class="mb-3">FACILITIES</h5>
+                    <div class="mb-2">
+                      <input type="checkbox" id="f1" class="form-check-input shadow-none me-1">
+                      <label class="form-check-label" for="f1">Wifi</label>
+                    </div>
+                    <div class="mb-2">
+                      <input type="checkbox" id="f2" class="form-check-input shadow-none me-1">
+                      <label class="form-check-label" for="f2">food</label>
+                    </div>
+                    <div class="mb-2">
+                      <input type="checkbox" id="f3" class="form-check-input shadow-none me-1">
+                      <label class="form-check-label" for="f3">swimmingpool</label>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
           </div>
-      </div>
-      </nav>
+        </nav>
       <div class="col-lg-9 col-md-12 px-4" style="background-color: #e9f1f7;">
         <div class="card mb-4 border-0 shadow">
           <div class="row no-gutters p-3 aline-items-center" >
             <div class="col-md-4">
               <img src="images/hm e1.jpg" class="card-img" alt="..." height="135px">
             </div>
-            <div class="col-md-6">
+            <div class="col-md-8">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
