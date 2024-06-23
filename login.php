@@ -118,6 +118,32 @@
   <button type="submit" value="submit" class="button">Submit</button>
 </form>
 </div>
+
+<?php
+$email = $_POST['email'];
+$password = $_POST['password'];
+
+$con = new mysqli('localhost','root','','hotel_management');
+    if ($con->connect_error) {
+      die('Connection Failed : '. $con->connect_error);
+    }else{
+      $stmt = $con->prepare("select * from user_registration where email = ?");
+      $stmt->bind_param("s", $email);
+      $stmt->execute();
+      $stmt_result = $stmt->get_result();
+      if($stmt_result->num_rows > 0) {
+         $data = $stmt_result->fetch_assoc();
+         if($data['password'] === $password){
+          echo"<h2>LOGIN SUCCESSFULL</h2>";
+         }else{
+          echo"<h2>INVALID EMAIL OR PASSWORD</h2>";
+         }
+      }else{
+        echo"<h2>INVALID EMAIL OR PASSWORD</h2>";
+      }
+    }
+?>
+
 <footer class="footer" id="about">
 
 
