@@ -25,7 +25,7 @@
 </head>
 
 <body>
-  <?php require 'navv/nav.php' ?>
+  <?php require 'navv/navrooms.php' ?>
 
   <h2 class="mt-3" style="text-align:center">OUR 1-STAR HOTEL ROOMS</h2>
   <div class=" mb-5" style="display:inline-block;vertical-align:top; width: fit-content; align-items: center;">
@@ -55,14 +55,14 @@
                   <input type="checkbox" id="f1" class="form-check-input shadow-none me-1">
                   <label class="form-check-label" for="f1">Wifi</label>
                 </div>
-                <div class="mb-2">
+                <!--<div class="mb-2">
                   <input type="checkbox" id="f2" class="form-check-input shadow-none me-1">
                   <label class="form-check-label" for="f2">food</label>
                 </div>
                 <div class="mb-2">
                   <input type="checkbox" id="f3" class="form-check-input shadow-none me-1">
                   <label class="form-check-label" for="f3">swimmingpool</label>
-                </div>
+                </div>-->
               </div>
             </div>
           </div>
