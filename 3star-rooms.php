@@ -69,6 +69,11 @@
           </div>
       </div>
       </nav>
+      <script>
+        function viewRoomDetails(roomId) {
+            window.location.href = 'user_dashboard.php?room_id=' + roomId;
+        }
+    </script>
       <div class="col-lg-9 col-md-12 px-4" style="background-color: #e9f1f7;">
         <div class="card mb-4 border-0 shadow">
           <div class="row no-gutters p-3 aline-items-center" >
@@ -83,7 +88,7 @@
               </div>
             </div>
             <div class="col-md-2">
-            <button class="button">BOOK NOW</button>
+            <button class="button" onclick="viewRoomDetails(4)">BOOK NOW</button>
             </div>
             
 
@@ -99,7 +104,7 @@
               </div>
             </div>
             <div class="col-md-2">
-            <button class="button" style="margin-left:22px;">BOOK NOW</button>
+            <button class="button" style="margin-left:22px;" onclick="viewRoomDetails(5)">BOOK NOW</button>
             </div>
             
 
@@ -115,7 +120,7 @@
               </div>
             </div>
             <div class="col-md-2">
-            <button class="button" style="margin-left:45px;">BOOK NOW</button>
+            <button class="button" style="margin-left:45px;" onclick="viewRoomDetails(6)">BOOK NOW</button>
             </div>
             
 
