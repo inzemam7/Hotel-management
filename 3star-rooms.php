@@ -7,13 +7,29 @@
   <title>Rooms</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+      .button {
+            text-align: center;
+            padding: 0.5rem;
+            border-radius: 1rem;
+            background-color: #816C61;
+            margin: 30px auto;
+            width: 115px;
+            
+            
+        }
+
+        .button:hover{
+          background-color: #e7dfc6;
+        }
+    </style>
 </head>
 
 <body>
   <?php require 'navv/nav.php' ?>
 
-  <h2 class="mt-3" style="text-align:center">OUR ROOMS</h2>
-  <div class="container mb-5" style="display:inline-block;vertical-align:top;">
+  <h2 class="mt-3" style="text-align:center">OUR 3-STAR HOTEL ROOMS</h2>
+  <div class=" mb-5" style="display:inline-block;vertical-align:top; width: fit-content; align-items: center;">
     <div class="row">
       <div class="col-lg-3">
         <nav class="navbar navbar-expand-lg navbar-light bg-white rounded ">
@@ -61,14 +77,13 @@
             </div>
             <div class="col-md-6">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
+                <h5 class="card-title">SUPERIOR</h5>
+                <p class="card-text">An upgraded option with stylish decor, a spacious layout, and added perks like a coffee maker and complimentary toiletries.</p>
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
               </div>
             </div>
             <div class="col-md-2">
-              <img src="" class="card-img" alt="...">
+            <button class="button">BOOK NOW</button>
             </div>
             
 
@@ -78,14 +93,13 @@
             </div>
             <div class="col-md-6">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
+                <h5 class="card-title">BUSINESS</h5>
+                <p class="card-text">Room tailored for business travelers, equipped with a work desk, high-speed internet, and convenient access to conference facilities.</p>
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
               </div>
             </div>
             <div class="col-md-2">
-              <img src="..." class="card-img" alt="...">
+            <button class="button" style="margin-left:22px;">BOOK NOW</button>
             </div>
             
 
@@ -95,14 +109,13 @@
             </div>
             <div class="col-md-6">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
+                <h5 class="card-title">EXECUTIVE SUITE</h5>
+                <p class="card-text">A luxurious choice featuring a separate living area, premium bedding, and exclusive access to a private lounge or concierge services.</p>
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
               </div>
             </div>
             <div class="col-md-2">
-              <button class="card-img "  >BOOK NOW</button>
+            <button class="button" style="margin-left:45px;">BOOK NOW</button>
             </div>
             
 

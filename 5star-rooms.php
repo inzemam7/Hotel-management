@@ -7,13 +7,27 @@
   <title>Rooms</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+      .button {
+            text-align: center;
+            padding: 0.5rem;
+            border-radius: 1rem;
+            background-color: #816C61;
+            margin: 30px auto;
+            width: 115px;
+        }
+
+        .button:hover{
+          background-color: #e7dfc6;
+        }
+    </style>
 </head>
 
 <body>
   <?php require 'navv/nav.php' ?>
 
-  <h2 class="mt-3" style="text-align:center">OUR ROOMS</h2>
-  <div class="container mb-5" style="display:inline-block;vertical-align:top;">
+  <h2 class="mt-3" style="text-align:center">OUR 5-STAR HOTEL ROOMS</h2>
+  <div class=" mb-5" style="display:inline-block;vertical-align:top; width: fit-content; align-items: center;">
     <div class="row">
       <div class="col-lg-3">
         <nav class="navbar navbar-expand-lg navbar-light bg-white rounded ">
@@ -57,35 +71,33 @@
         <div class="card mb-4 border-0 shadow">
           <div class="row no-gutters p-3 aline-items-center" >
             <div class="col-md-4">
-              <img src="images/hm e3.jpg" class="card-img" alt="..." height="135px">
+              <img src="images/PRE.jpeg" class="card-img" alt="..." height="135px">
             </div>
             <div class="col-md-6">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
+                <h5 class="card-title">PRESIDENTIAL SUITE</h5>
+                <p class="card-text">An opulent accommodation featuring multiple rooms, private dining and living areas, a grand bathroom, and often exclusive services like a personal butler.</p>
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
               </div>
             </div>
             <div class="col-md-2">
-              <img src="..." class="card-img" alt="...">
+            <button class="button">BOOK NOW</button>
             </div>
             
 
             <div class="row no-gutters p-3 aline-items-center">
             <div class="col-md-4">
-              <img src="images/hm b3.jpg" class="card-img" alt="..." height="135px">
+              <img src="images/PEN.jpeg" class="card-img" alt="..." height="135px">
             </div>
             <div class="col-md-6">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
+                <h5 class="card-title">PENTHOUSE SUITE</h5>
+                <p class="card-text">Located on the top floor, this suite offers breathtaking views, luxurious furnishings, a private terrace, and high-end amenities such as a Jacuzzi and a fully-equipped kitchen.</p>
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
               </div>
             </div>
             <div class="col-md-2">
-              <img src="..." class="card-img" alt="...">
+            <button class="button" style="margin-left:22px;">BOOK NOW</button>
             </div>
             
 
@@ -95,14 +107,13 @@
             </div>
             <div class="col-md-6">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
+                <h5 class="card-title">ROYAL SUITE</h5>
+                <p class="card-text">Designed for royalty, this suite includes lavish interiors, state-of-the-art technology, a grand piano, and access to a private elevator and personal security services.</p>
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
               </div>
             </div>
             <div class="col-md-2">
-              <img src="..." class="card-img" alt="...">
+            <button class="button" style="margin-left:45px;">BOOK NOW</button>
             </div>
             
 

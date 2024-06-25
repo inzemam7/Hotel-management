@@ -89,11 +89,12 @@
     </style>
   </head>
   <body>
+    
   <?php require'navv/nav.php' ?>
 <div class="cont">   
     <h1> REGISTRATION!</h1>
 
-    <form class="log" action="userlogin.php" method="Post" name="myform" onsubmit="return validateform()">
+    <form class="log" action="" method="Post" name="myform" onsubmit="return validateform()">
     <div class="mb-3">
     <label for="username" class="form-label">Username</label>
     <input type="text" class="form-control" id="username" name="username" aria-describedby="emailHelp">
@@ -111,6 +112,25 @@
   <button type="submit" value="submit" class="button">Submit</button>
 </form>
 </div>
+
+<?php 
+    $username = $_POST['username'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+
+    $conn = new mysqli('localhost','root','','hotel_management');
+    if ($conn->connect_error) {
+      die('Connection Failed : '. $conn->connect_error);
+    }else{
+      $stmt = $conn->prepare("insert into user_registration(username, email, password)
+      values(?, ?, ?)");
+      $stmt->bind_param("sss", $username, $email, $password);
+      $stmt->execute();
+      echo"REGISTERED SUCCESSFULLY....";
+      $stmt->close();
+      $conn->close();
+    }
+    ?>
 <footer class="footer" id="about">
 
 

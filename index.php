@@ -41,12 +41,12 @@
             width: 145px;
         }
 
-        .buttonH{
+        .buttonH {
             text-align: center;
             padding: 1rem;
             border-radius: 0.5rem;
             background-color: #816C61;
-            margin: 10px auto ;
+            margin: 10px auto;
             width: 370px;
             height: 50px;
         }
@@ -136,7 +136,7 @@
             background-color: #e7dfc6
         }
 
-        #hotel{
+        #hotel {
             height: 90%;
             background-color: #E9F1F7;
             width: 30%;
@@ -147,19 +147,59 @@
 
         }
 
-        .buttonH{
-            width:100%;
-        }
-        .content{
-            margin-top:40px;
-            width:50%;
-        }
-
-        .slide{
-                        
+        .dropbtn {
+            background-color: #2274C9;
+            color: white;
+            padding: 1rem;
+            border-radius: 2rem;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
         }
 
+        /* Dropdown button on hover & focus */
+        .dropbtn:hover,
+        .dropbtn:focus {
+            background-color: #E9F1F7;
+            color: #816C61;
+        }
 
+        /* The container <div> - needed to position the dropdown content */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            
+        }
+
+        /* Dropdown Content (Hidden by Default) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #e7dfc6;
+            min-width: 160px;
+            border-radius: 2rem;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {
+            background-color: #E9F1F7;
+            color: #816C61;
+        }
+
+        /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+        .show {
+            display: block;
+        }
 
         @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
     </style>
@@ -172,7 +212,17 @@
         <h1>[insert hotel name]</h1>
         <ul>
             <li><a href="index.php">HOME</a></li>
-            <li><a href="rooms.php">ROOMS</a></li>
+            <li>
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">HOTELS</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="1star-rooms.php">1-STAR HOTEL</a>
+                        <a href="3star-rooms.php">3-STAR HOTEL</a>
+                        <a href="5star-rooms.php">5-STAR HOTEL</a>
+                    </div>
+                </div>
+            </li>
+            <!-- <li><a href="rooms.php">ROOMS</a></li>-->
             <li><a href="admin/adminlogin.php">ADMIN</a></li>
             <li><a href="#contact">CONTACT</a></li>
             <li><a href="#about">ABOUT US </a></li>
@@ -184,7 +234,7 @@
                     href="registration.php">Register</a></button>
         </form>
     </header>
-    <div style="padding-top: 2rem; padding-bottom: 1rem;">
+    <div style="padding-top: 3rem; padding-bottom: 1rem;">
         <form class="" action="">
             <input class="form" type="datetime-local" placeholder="select your check-in date & time">
         </form>
@@ -269,6 +319,27 @@
             x[slideIndex - 1].style.display = "block";
             setTimeout(carousel, 2000); // Change image every 2 seconds
         }
+    </script>
+
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+
     </script>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 

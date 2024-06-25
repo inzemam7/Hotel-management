@@ -7,13 +7,28 @@
   <title>Rooms</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+      .button {
+            text-align: center;
+            padding: 0.5rem;
+            border-radius: 1rem;
+            background-color: #816C61;
+            margin: 30px auto;
+            width: 115px;
+        }
+
+        .button:hover{
+          background-color: #e7dfc6;
+        }
+    </style>
 </head>
 
 <body>
   <?php require 'navv/nav.php' ?>
 
-  <h2 class="mt-3" style="text-align:center">OUR ROOMS</h2>
-  <div class="container mb-5" style="display:inline-block;vertical-align:top;">
+  <h2 class="mt-3" style="text-align:center">OUR 1-STAR HOTEL ROOMS</h2>
+  <div class=" mb-5" style="display:inline-block;vertical-align:top; width: fit-content; align-items: center;">
     <div class="row">
       <div class="col-lg-3">
         <nav class="navbar navbar-expand-lg navbar-light bg-white rounded ">
@@ -52,23 +67,26 @@
                 </div>
               </div>
           </div>
-        </nav>
+          
+      </div>
+      </nav>
       <div class="col-lg-9 col-md-12 px-4" style="background-color: #e9f1f7;">
         <div class="card mb-4 border-0 shadow">
           <div class="row no-gutters p-3 aline-items-center" >
             <div class="col-md-4">
               <img src="images/hm e1.jpg" class="card-img" alt="..." height="135px">
             </div>
-            <div class="col-md-8">
+
+            <div class="col-md-6">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
+                <h5 class="card-title">ECONOMIC</h5>
+                <p class="card-text">Single Room: A compact, single-occupancy space with basic furnishings and shared or en-suite bathroom options, ideal for solo travelers on a budget.</p>
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
               </div>
+
             </div>
             <div class="col-md-2">
-              <img src="" class="card-img" alt="...">
+              <button class="button">BOOK NOW</button>
             </div>
             
 
@@ -76,16 +94,17 @@
             <div class="col-md-4">
               <img src="images/hm e2.jpg" class="card-img" alt="..." height="135px">
             </div>
+
             <div class="col-md-6">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
+                <h5 class="card-title">STANDARD</h5>
+                <p class="card-text">Double Room: A simple room featuring a double bed or twin beds, suitable for one or two guests seeking affordable accommodation with essential amenities.</p>
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
               </div>
             </div>
+
             <div class="col-md-2">
-              <img src="..." class="card-img" alt="...">
+            <button class="button" style="margin-left:22px;">BOOK NOW</button>
             </div>
             
 
@@ -93,16 +112,17 @@
             <div class="col-md-4">
               <img src="images/hm L2.jpg" class="card-img" alt="..." height="135px">
             </div>
+
             <div class="col-md-6">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
+                <h5 class="card-title">DELUXE</h5>
+                <p class="card-text">Family Room: A larger room accommodating families with multiple beds, designed to offer basic comfort and convenience for budget-conscious travelers exploring together.</p>
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
               </div>
             </div>
+
             <div class="col-md-2">
-              <img src="..." class="card-img" alt="...">
+            <button class="button" style="margin-left:45px;">BOOK NOW</button>
             </div>
             
 
