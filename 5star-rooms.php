@@ -87,7 +87,7 @@
             </div>
             <div class="col-md-2">
             <button class="button" onclick="viewRoomDetails(7)">BOOK NOW</button>
-            </div>
+            </div> 
             
 
             <div class="row no-gutters p-3 aline-items-center">
