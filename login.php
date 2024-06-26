@@ -144,6 +144,7 @@ $con = new mysqli('localhost','root','','hotel_management');
       }
     }
 ?>
+
 <footer class="footer" id="about">
 
 
