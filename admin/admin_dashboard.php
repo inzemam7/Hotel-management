@@ -36,7 +36,7 @@
               <a class="nav-link text-white" href="admin_dashboard.php">Dashboard</a>
             </li>
             <li>
-              <a class="nav-link text-white" href="#">Rooms</a>
+              <a class="nav-link text-white" href="rooms.php">Rooms</a>
             </li>
             <li>
               <a class="nav-link text-white" href="#">Users</a>
