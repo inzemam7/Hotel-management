@@ -25,6 +25,15 @@
 
 <body>
   <?php require 'navv/navrooms.php' ?>
+  <?php
+session_start();
+
+// Check if the user is logged in
+if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
+    header("Location: login.php"); // Redirect to login page if not logged in
+    exit;
+}
+?>
 
   <h2 class="mt-3" style="text-align:center">OUR 5-STAR HOTEL ROOMS</h2>
   <div class=" mb-5" style="display:inline-block;vertical-align:top; width: fit-content; align-items: center;">
@@ -87,7 +96,7 @@
             </div>
             <div class="col-md-2">
             <button class="button" onclick="viewRoomDetails(7)">BOOK NOW</button>
-            </div>
+            </div> 
             
 
             <div class="row no-gutters p-3 aline-items-center">

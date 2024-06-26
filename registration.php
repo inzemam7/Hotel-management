@@ -90,7 +90,7 @@
   </head>
   <body>
     
-  <?php require'navv/nav.php' ?>
+  <?php require'navv/nav.php' ?> 
 <div class="cont">   
     <h1> REGISTRATION!</h1>
 

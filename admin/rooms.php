@@ -1,4 +1,5 @@
 <?php 
+<<<<<<< HEAD
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -16,6 +17,12 @@ $query="select * from users";
 $result=mysqli_query($conn,$query);
 
 ?>
+=======
+ require('extra.php');
+
+ 
+ ?>
+>>>>>>> f96cd1aa19595e36feffd9fbf3351a511f050ffd
 <!doctype html>
 <html lang="en">
   <head>

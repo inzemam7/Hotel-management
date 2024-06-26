@@ -45,7 +45,7 @@ if ($result->num_rows > 0) {
     echo "<p>Hotel ID: " . $row["hotel_id"] . "</p>";
     echo "<p>Room Number: " . $row["room_no"] . "</p>";
     echo "<p>Type: " . $row["room_type"] . "</p>";
-    echo "<p>Price: $" . $row["room_price"] . "</p>";
+    echo "<p>Price: ₹" . $row["room_price"] . "</p>";
     echo "<p>Available: " . ($row["room_availability"] ? 'Yes' : 'No') . "</p>";
 } else {
     echo "No room found with the specified ID.";

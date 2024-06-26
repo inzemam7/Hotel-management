@@ -47,7 +47,7 @@
             border-radius: 0.5rem;
             background-color: #816C61;
             margin: 10px auto;
-            width: 370px;
+            width: 425px;
             height: 50px;
         }
 
@@ -139,7 +139,7 @@
         #hotel {
             height: 90%;
             background-color: #E9F1F7;
-            width: 30%;
+            width: 31%;
             padding: 10px;
             margin-left: 20px;
             border-radius: 0.5rem;
@@ -209,7 +209,7 @@
 
     <header class="navbar">
 
-        <h1>[insert hotel name]</h1>
+        <h1>ABODE BOOKINGS</h1>
         <ul>
             <li><a href="index.php">HOME</a></li>
             <li>
