@@ -1,7 +1,8 @@
 
 <?php 
- require('db_admin.php');
  require('extra.php');
+ require('db_admin.php');
+ 
  session_start();
  if((isset($_SESSIONٌ['adminLogin']) && $_SESSION['adminLogin']==true))
 {
@@ -143,7 +144,6 @@
 
           if($res->num_rows==1){
                 $row=mysqli_fetch_assoc($res);
-                session_start();
                 $_SESSION['adminLogin']=true;
                 $_SESSION['adminId']=$row['s_no'];
                 redirect('admin_dashboard.php');
