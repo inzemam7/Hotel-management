@@ -46,8 +46,8 @@
             padding: 1rem;
             border-radius: 0.5rem;
             background-color: #816C61;
-            margin: 10px auto;
-            width: 425px;
+            margin: 10px 90px;
+            width: fit-content;
             height: 50px;
         }
 
@@ -144,7 +144,6 @@
             margin-left: 20px;
             border-radius: 0.5rem;
             display: inline-block;
-
         }
 
         .dropbtn {
@@ -258,17 +257,17 @@
     <div id="hotelspage">
         <h3 style="text-align:center;">Celebrate your holidays at the best hotels</h3>
         <div id="hotel">
-            <img src="images/hm h 1.jpg" alt="hotel 1" width="425px" height="300px">
+            <img src="images/hm h 1.jpg" alt="hotel 1" width="390px" height="300px">
             <button class="buttonH" ><a  class="anc" href="1star-rooms.php">BOOK A 1-STAR HOTEL</a></button>
         </div>
 
         <div id="hotel">
-            <img src="images/hm 1.jpg" alt="hotel 2" alt="hotel 1" width="425px" height="300px">
+            <img src="images/hm 1.jpg" alt="hotel 2" alt="hotel 1" width="390px" height="300px">
             <button class="buttonH"><a  class="anc" href="3star-rooms.php">BOOK A 3-STAR HOTEL</a></button>
         </div>
 
         <div id="hotel">
-            <img src="images/hm 3.webp" alt="hotel 3" alt="hotel 1" width="425px" height="300px">
+            <img src="images/hm 3.webp" alt="hotel 3" alt="hotel 1" width="390px" height="300px">
             <button class="buttonH"><a  class="anc" href="5star-rooms.php">BOOK A 5-STAR HOTEL</a></button>
         </div>
     </div>
@@ -279,7 +278,7 @@
         <h2 style="text-align:center">About Us</h2>
         <div class="row">
             <div class="col p-4">
-                <h3>Hotel name</h3>
+                <h3>Abode Bookings</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Quisquam, nihil! Cum voluptate ipsum itaque aliquid ab fuga explicabo
                     dolorum repellendus similique nisi earum iste esse ea,
@@ -342,7 +341,6 @@
 
     </script>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-
     <script>
         config = {
             enableTime: true,
@@ -356,5 +354,4 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 </body>
-
 </html>
