@@ -1,8 +1,7 @@
-<?php 
-require ('extra.php');
-
+<?php
 session_start();
-session_destroy();
-redirect('index.php');
-
+$_SESSION = array(); // Clear all session variables
+session_destroy(); // Destroy the session
+header("Location: login.php"); // Redirect to login page
+exit;
 ?>

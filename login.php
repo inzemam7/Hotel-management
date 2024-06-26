@@ -99,6 +99,36 @@
   </head>
   <body>
 
+  <?php
+session_start();
+include 'dbconnect.php'; // Include your database connection file
+
+// Check if the form is submitted
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+
+    // Query to check the credentials
+    $sql = "SELECT * FROM user_registration WHERE email = ? AND password = ?";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("ss", $email, $password);
+    $stmt->execute();
+    $result = $stmt->get_result();
+
+    if ($result->num_rows > 0) {
+        // Login successful
+        $_SESSION['loggedin'] = true;
+        $_SESSION['email'] = $email;
+        header("Location: 1star-rooms.php"); // Redirect to restricted page
+        exit;
+    } else {
+        // Login failed
+        echo "Invalid username or password.";
+    }
+    $stmt->close();
+}
+$conn->close();
+?>
 
 
   <?php require'navv/nav.php' ?>
@@ -120,30 +150,7 @@
 </form>
 </div>
 
-<?php
-$email = $_POST['email'];
-$password = $_POST['password'];
 
-$con = new mysqli('localhost','root','','hotel_management');
-    if ($con->connect_error) {
-      die('Connection Failed : '. $con->connect_error);
-    }else{
-      $stmt = $con->prepare("select * from user_registration where email = ?");
-      $stmt->bind_param("s", $email);
-      $stmt->execute();
-      $stmt_result = $stmt->get_result();
-      if($stmt_result->num_rows > 0) {
-         $data = $stmt_result->fetch_assoc();
-         if($data['password'] === $password){
-          echo"<h2>LOGIN SUCCESSFULL</h2>";
-         }else{
-          echo"<h2>INVALID EMAIL OR PASSWORD</h2>";
-         }
-      }else{
-        echo"<h2>INVALID EMAIL OR PASSWORD</h2>";
-      }
-    }
-?>
 
 <footer class="footer" id="about">
 
