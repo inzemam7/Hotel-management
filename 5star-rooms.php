@@ -24,7 +24,7 @@
 </head>
 
 <body>
-  <?php require 'navv/nav.php' ?>
+  <?php require 'navv/navrooms.php' ?>
 
   <h2 class="mt-3" style="text-align:center">OUR 5-STAR HOTEL ROOMS</h2>
   <div class=" mb-5" style="display:inline-block;vertical-align:top; width: fit-content; align-items: center;">

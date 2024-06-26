@@ -25,7 +25,7 @@
 </head>
 
 <body>
-  <?php require 'navv/nav.php' ?>
+  <?php require 'navv/navrooms.php' ?>
 
   <h2 class="mt-3" style="text-align:center">OUR 1-STAR HOTEL ROOMS</h2>
   <div class=" mb-5" style="display:inline-block;vertical-align:top; width: fit-content; align-items: center;">
@@ -49,25 +49,23 @@
                     <input type="date" class="form-control shadow none">
                   </div>
 
-                  <div class="border bg-light p-3 rounded shadow ml-auto mb-3 mt-3">
-                    <h5 class="mb-3">FACILITIES</h5>
-                    <div class="mb-2">
-                      <input type="checkbox" id="f1" class="form-check-input shadow-none me-1">
-                      <label class="form-check-label" for="f1">Wifi</label>
-                    </div>
-                    <div class="mb-2">
-                      <input type="checkbox" id="f2" class="form-check-input shadow-none me-1">
-                      <label class="form-check-label" for="f2">food</label>
-                    </div>
-                    <div class="mb-2">
-                      <input type="checkbox" id="f3" class="form-check-input shadow-none me-1">
-                      <label class="form-check-label" for="f3">swimmingpool</label>
-                    </div>
-                  </div>
+              <div class="border bg-light p-3 rounded shadow ml-auto mb-3 mt-3">
+                <h5 class="mb-3">FACILITIES</h5>
+                <div class="mb-2">
+                  <input type="checkbox" id="f1" class="form-check-input shadow-none me-1">
+                  <label class="form-check-label" for="f1">Wifi</label>
                 </div>
+                <!--<div class="mb-2">
+                  <input type="checkbox" id="f2" class="form-check-input shadow-none me-1">
+                  <label class="form-check-label" for="f2">food</label>
+                </div>
+                <div class="mb-2">
+                  <input type="checkbox" id="f3" class="form-check-input shadow-none me-1">
+                  <label class="form-check-label" for="f3">swimmingpool</label>
+                </div>-->
               </div>
+            </div>
           </div>
-          
       </div>
       </nav>
       <div class="col-lg-9 col-md-12 px-4" style="background-color: #e9f1f7;">
