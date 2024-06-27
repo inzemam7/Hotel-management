@@ -1,5 +1,4 @@
 <?php 
-<<<<<<< HEAD
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -13,16 +12,10 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$query="select * from users";
+$query="select * from rooms";
 $result=mysqli_query($conn,$query);
 
 ?>
-=======
- require('extra.php');
-
- 
- ?>
->>>>>>> f96cd1aa19595e36feffd9fbf3351a511f050ffd
 <!doctype html>
 <html lang="en">
   <head>
@@ -35,6 +28,15 @@ $result=mysqli_query($conn,$query);
         position:fixed;
         height:100%;
       }
+
+      .tab1{
+        background-color:dark;
+        color:white;
+
+      }
+
+
+
     </style>
   </head>
     <body>
@@ -78,11 +80,11 @@ $result=mysqli_query($conn,$query);
                             </div>
                             <div class="table-responsive-lg" style="height:450px; overflow-y:scroll;">
                                 <table class="table table-hover border">
-                                    <thead>
-                                        <tr class="text-light" style="background-color:dark;">
+                                    <thead class="tab1">
+                                        <tr class="tab" >
                                             <th scope="col">#</th>
+                                            <th scope="col">hotel_id</th>
                                             <th scope="col">Name</th>
-                                            <th scope="col">Area</th>
                                             <th scope="col">Price</th>
                                             <th scope="col">Quantity</th>
                                             <th scope="col">Status</th>
@@ -90,9 +92,26 @@ $result=mysqli_query($conn,$query);
                                         </tr>
                                     </thead>
                                     <tbody id="room-data">
+                                    <tr>
                                     <?php
+                                        while($row = mysqli_fetch_assoc($result))
+                                        {
+                                        ?>
+                                        <td><?php echo $row['r_id']; ?></td>
+                                        <td><?php echo $row['h_id']; ?></td>
+                                        <td><?php echo $row['name']; ?></td>                                        
+                                        <td><?php echo $row['price']; ?></td>
+                                        <td><?php echo $row['quantity']; ?></td>
+                                        <td><?php echo $row['status']; ?></td>
+                                        <td><?php echo $row['action']; ?></td>
 
-                                    ?>
+                                        </tr>
+                                        <?php
+                                        
+                                        }
+                                        
+                                        ?>
+                                    
                                         
                                     </tbody>
                                 </table>
