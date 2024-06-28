@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>User registration</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -30,12 +30,12 @@ $room_id = isset($_GET['room_id']) ? intval($_GET['room_id']) : 0;
 
 // Validate the room id
 if ($room_id <= 0) {
-    echo "Invalid room ID.";
+    echo "Invalid room ID. or You might have not selected a room";
     exit;
 }
 
 // SQL to fetch the room details
-$sql = "SELECT room_id, hotel_id, room_no, room_type, room_price, room_availability, check_in_date, check_out_date FROM Rooms WHERE room_id = ?";
+$sql = "SELECT room_id, hotel_id, room_no, room_type, room_price, room_availability FROM Room WHERE room_id = ?";
 $stmt = $conn->prepare($sql);
 $stmt->bind_param("i", $room_id);
 $stmt->execute();
@@ -61,6 +61,10 @@ if ($result->num_rows > 0) {
 // Close the connection
 $conn->close();
 ?>
+
+<div>
+  <h2>YOUR SELECTED ROOM HAS BEEN BOOKED</h2>
+
 </div>
 
 

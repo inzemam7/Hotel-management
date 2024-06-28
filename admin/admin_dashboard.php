@@ -1,5 +1,6 @@
 <?php 
  require('extra.php');
+ adminLogin();
 
  
  ?>
@@ -8,7 +9,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Admin-Dashboard</title>
+    <title>Admin Dashboard</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
       #dash{
@@ -33,14 +34,9 @@
           </button>
           <ul class="nav flex-column">
             <li class="nav-item">
-              <a class="nav-link text-white" href="admin_dashboard.php">Dashboard</a>
-            </li>
-            <li>
               <a class="nav-link text-white" href="rooms.php">Rooms</a>
             </li>
-            <li>
-              <a class="nav-link text-white" href="#">Users</a>
-            </li>
+            
           </ul>
         </div>
       </nav>
@@ -49,6 +45,8 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-lg-10 ms-auto p-4 overflow-hidden">
+          <h3>Rooms</h3>
+          
           
 
         </div>

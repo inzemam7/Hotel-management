@@ -24,7 +24,7 @@
         <h2 style="text-align:center">About Us</h2>
         <div class="row">
             <div class="col p-4">
-                <h3>Hotel name</h3>
+                <h3>Abode Bookings</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Quisquam, nihil! Cum voluptate ipsum itaque aliquid ab fuga explicabo 
                     dolorum repellendus similique nisi earum iste esse ea,

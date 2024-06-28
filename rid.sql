@@ -27,7 +27,7 @@ SET time_zone = "+00:00";
 -- Table structure for table `rooms`
 --
 
-CREATE TABLE `rooms` (
+CREATE TABLE `room` (
   `room_id` int(11) NOT NULL,
   `hotel_id` int(11) NOT NULL,
   `room_no` varchar(10) NOT NULL,
@@ -40,7 +40,7 @@ CREATE TABLE `rooms` (
 -- Dumping data for table `rooms`
 --
 
-INSERT INTO `rooms` (`room_id`, `hotel_id`, `room_no`, `room_type`, `room_price`, `room_availability`) VALUES
+INSERT INTO `room` (`room_id`, `hotel_id`, `room_no`, `room_type`, `room_price`, `room_availability`) VALUES
 (1, 1, '101', 'Economic', 2500, 1),
 (2, 1, '102', 'Standard', 3500, 1),
 (3, 1, '103', 'Deluxe', 5000, 1),
@@ -58,7 +58,7 @@ INSERT INTO `rooms` (`room_id`, `hotel_id`, `room_no`, `room_type`, `room_price`
 --
 -- Indexes for table `rooms`
 --
-ALTER TABLE `rooms`
+ALTER TABLE `room`
   ADD PRIMARY KEY (`room_id`);
 
 --
@@ -68,7 +68,7 @@ ALTER TABLE `rooms`
 --
 -- AUTO_INCREMENT for table `rooms`
 --
-ALTER TABLE `rooms`
+ALTER TABLE `room`
   MODIFY `room_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
@@ -78,7 +78,7 @@ ALTER TABLE `rooms`
 --
 -- Constraints for table `rooms`
 --
-ALTER TABLE `rooms`
+ALTER TABLE `room`
   ADD CONSTRAINT `rooms_ibfk_1` FOREIGN KEY (`hotel_id`) REFERENCES `hotel` (`hotel_id`);
 COMMIT;
 

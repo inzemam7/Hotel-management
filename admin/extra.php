@@ -6,7 +6,7 @@ function adminLogin()
     if(!(isset($_SESSIONٌ['adminLogin']) && $_SESSION['adminLogin']==true))
     {
         echo "<script>
-            window.location.href='adminlogin.php';
+            window.location.href='admin_dashboard.php';
         </script>";
     }
 }
