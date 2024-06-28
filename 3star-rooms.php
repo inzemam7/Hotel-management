@@ -48,8 +48,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
 }
 ?>
 
-  <h2 class="mt-3" style=" display: inline; text-align:center; margin-left: 450px; ">OUR 3-STAR HOTEL ROOMS</h2>
-  <a  id="anc" href="3star-details.php">Hotel Details</a>
+  <h2 class="mt-3" style="text-align:center;">OUR 3-STAR HOTEL ROOMS</h2>
   <div class=" mb-5" style="display:inline-block;vertical-align:top; width: fit-content; align-items: center;">
     <div class="row">
       <div class="col-lg-3">

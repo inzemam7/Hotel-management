@@ -146,6 +146,13 @@
             display: inline-block;
         }
 
+        #p{
+            background-color: #E9F1F7;
+            color: #816C61;
+            padding: 1px;
+        }
+        
+
         .dropbtn {
             background-color: #2274C9;
             color: white;
@@ -271,7 +278,7 @@
             <button class="buttonH"><a  class="anc" href="5star-rooms.php">BOOK A 5-STAR HOTEL</a></button>
         </div>
     </div>
-
+<div style="align-items: center; background-color: #e7dfc6; color: black; margin:50px; padding: 1rem; border-radius: 2rem; text-align:center;">
     <?php
 // Include the common database connection script
 require 'dbconnect.php';
@@ -283,8 +290,8 @@ $result = $conn->query($sql);
 // Check if there are results
 if ($result->num_rows > 0) {
     // Start HTML table
-    echo "<table border='1'>";
-    echo "<tr><th>Hotel Name</th>&nbsp;<th>Details</th></tr>";
+    echo "<table border='3' style='aglin-items:center;'>";
+    echo "<tr><th>Hotel Name</th>&nbsp;&nbsp;&nbsp;<th>Details</th></tr>";
 
     // Output data of each row
     while($row = $result->fetch_assoc()) {
@@ -293,7 +300,7 @@ if ($result->num_rows > 0) {
         echo "<td>" . $row["hotel_name"] . "</td>";
         //echo "<td>" . $row["hotel_type"] . "</td>";
         //echo "<td>" . $row["hotel_city"] . "</td>";
-        echo "<td><a href='details.php?hotel_id=" . $row["hotel_id"] . "'>View Details</a></td>";
+        echo "<td><a id='p' href='details.php?hotel_id=" . $row["hotel_id"] . "'>View Details</a></td>";
         echo "</tr>";
     }
 
@@ -306,7 +313,7 @@ if ($result->num_rows > 0) {
 // Close the database connection
 $conn->close();
 ?>
-
+</div>
 
     <div class="centre button">
         <a href="#">Back to top</a>

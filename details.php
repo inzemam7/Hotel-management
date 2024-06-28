@@ -59,5 +59,6 @@ if ($hotel_id > 0) {
 // Close the database connection
 $conn->close();
 ?>
+  <?php require 'include/footer.php' ?>
 </body>
 </html>

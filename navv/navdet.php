@@ -53,21 +53,11 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="index.php">Home</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="1star-details.php">1 Star Rooms</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="3star-details.php">3 Star Rooms</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="5star-details.php">5 Star Rooms</a>
-        </li>
+       
         <li class="nav-item">
           <a class="nav-link" href="#contact">Contact</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="user_logout.php">LOGOUT</a>
-        </li>
+        
       </ul>
       <!--<form class="d-flex" role="search">
         <button class="btn btn-outline-dark shadow-none me-lg-3 me-3" type="submit" ><a class="nav-link" href="login.php"> Login</a></button>
