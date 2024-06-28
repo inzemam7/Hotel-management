@@ -15,7 +15,12 @@
     </style>
 </head>
 <body>
+
 <?php require 'navv/nav2.php' ?>
+<div style="text-align: center;">
+  <h2>YOUR SELECTED ROOM</h2>
+</div>
+<div style="background-color: #e7dfc6; padding: 20px; border-radius: 40px; display: grid;">
 <?php
 // Include the connection script
 include 'dbconnect.php';
@@ -30,7 +35,7 @@ if ($room_id <= 0) {
 }
 
 // SQL to fetch the room details
-$sql = "SELECT room_id, hotel_id, room_no, room_type, room_price, room_availability FROM Rooms WHERE room_id = ?";
+$sql = "SELECT room_id, hotel_id, room_no, room_type, room_price, room_availability, check_in_date, check_out_date FROM Rooms WHERE room_id = ?";
 $stmt = $conn->prepare($sql);
 $stmt->bind_param("i", $room_id);
 $stmt->execute();
@@ -47,6 +52,8 @@ if ($result->num_rows > 0) {
     echo "<p>Type: " . $row["room_type"] . "</p>";
     echo "<p>Price: ₹" . $row["room_price"] . "</p>";
     echo "<p>Available: " . ($row["room_availability"] ? 'Yes' : 'No') . "</p>";
+    //echo "<p>Your check in date: " . $row["check_in_date"] . "</p>";
+    //echo "<p>Your check out date: " . $row["check_out_date"] . "</p>";
 } else {
     echo "No room found with the specified ID.";
 }
@@ -54,11 +61,8 @@ if ($result->num_rows > 0) {
 // Close the connection
 $conn->close();
 ?>
-
-<div>
-  <h2>YOUR SELECTED ROOM</h2>
-
 </div>
+
 
 <?php require 'include/footer.php' ?>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
