@@ -271,6 +271,43 @@
             <button class="buttonH"><a  class="anc" href="5star-rooms.php">BOOK A 5-STAR HOTEL</a></button>
         </div>
     </div>
+
+    <?php
+// Include the common database connection script
+require 'dbconnect.php';
+
+// SQL query to select all rows from the hotel table
+$sql = "SELECT * FROM hotel";
+$result = $conn->query($sql);
+
+// Check if there are results
+if ($result->num_rows > 0) {
+    // Start HTML table
+    echo "<table border='1'>";
+    echo "<tr><th>Hotel Name</th>&nbsp;<th>Details</th></tr>";
+
+    // Output data of each row
+    while($row = $result->fetch_assoc()) {
+        echo "<tr>";
+        //echo "<td>" . $row["hotel_id"] . "</td>";
+        echo "<td>" . $row["hotel_name"] . "</td>";
+        //echo "<td>" . $row["hotel_type"] . "</td>";
+        //echo "<td>" . $row["hotel_city"] . "</td>";
+        echo "<td><a href='details.php?hotel_id=" . $row["hotel_id"] . "'>View Details</a></td>";
+        echo "</tr>";
+    }
+
+    // End HTML table
+    echo "</table>";
+} else {
+    echo "0 results";
+}
+
+// Close the database connection
+$conn->close();
+?>
+
+
     <div class="centre button">
         <a href="#">Back to top</a>
     </div>
