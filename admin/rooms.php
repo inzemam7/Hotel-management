@@ -55,13 +55,9 @@ $result=mysqli_query($conn,$query);
             </button>
             <ul class="nav flex-column">
                 <li class="nav-item">
-                <a class="nav-link text-white" href="admin_dashboard.php">Dashboard</a>
-                </li>
-                <li>
                 <a class="nav-link text-white" href="rooms.php">Rooms</a>
                 </li>
-                <li>
-                <a class="nav-link text-white" href="#">Users</a>
+                
                 </li>
             </ul>
             </div>
@@ -88,7 +84,6 @@ $result=mysqli_query($conn,$query);
                                             <th scope="col">Price</th>
                                             <th scope="col">Quantity</th>
                                             <th scope="col">Status</th>
-                                            <th scope="col">Action</th>
                                         </tr>
                                     </thead>
                                     <tbody id="room-data">
@@ -103,7 +98,6 @@ $result=mysqli_query($conn,$query);
                                         <td><?php echo $row['price']; ?></td>
                                         <td><?php echo $row['quantity']; ?></td>
                                         <td><?php echo $row['status']; ?></td>
-                                        <td><?php echo $row['action']; ?></td>
 
                                         </tr>
                                         <?php
