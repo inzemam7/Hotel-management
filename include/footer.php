@@ -25,10 +25,15 @@
         <div class="row">
             <div class="col p-4">
                 <h3>Abode Bookings</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Quisquam, nihil! Cum voluptate ipsum itaque aliquid ab fuga explicabo 
-                    dolorum repellendus similique nisi earum iste esse ea,
-                    aperiam iusto veniam molestias.</p>
+                <p>Developed By <br>
+                     <ul>
+                        <li>Nawaz Mohd Khan(22361A0577)</li>
+                        <li>Syed Inzemamuddin(22361A05B4)</li>
+                        <li>V.Nikitha(22361A0580)</li>
+                        <li>K.Sharnika(22361A0591)</li>
+
+                   </ul>
+                </p>
             </div>
 
             <div class="col p-4">

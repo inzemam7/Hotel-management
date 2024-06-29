@@ -240,13 +240,13 @@
                     href="registration.php">Register</a></button>
         </form>
     </header>
-    <div style="padding-top: 3rem; padding-bottom: 1rem;">
+    <div style="padding-top: 10rem; padding-bottom: 1rem;">
         <form class="" action="">
-            <input class="form" type="datetime-local" placeholder="select your check-in date & time">
+           <!-- <input class="form" type="datetime-local" placeholder="select your check-in date & time">-->
         </form>
     </div>
 
-    <div class="slide" style="display:inline-block;vertical-align:top;">
+    <div class="slide " style="display:inline-block;vertical-align:top;">
         <img class="mySlides image" src="images/hm 4.avif">
         <img class="mySlides image" src="images/hm 5.avif">
         <img class="mySlides image" src="images/hm 6.avif">
@@ -323,10 +323,15 @@ $conn->close();
         <div class="row">
             <div class="col p-4">
                 <h3>Abode Bookings</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Quisquam, nihil! Cum voluptate ipsum itaque aliquid ab fuga explicabo
-                    dolorum repellendus similique nisi earum iste esse ea,
-                    aperiam iusto veniam molestias.</p>
+                <p>Developed By <br>
+                     <l>
+                        <li>Nawaz Mohd Khan(22361A0577)</li>
+                        <li>Syed Inzemamuddin(22361A05B4)</li>
+                        <li>V.Nikitha(22361A0580)</li>
+                        <li>K.Sharnika(22361A0591)</li>
+
+                   </l>
+                </p>
             </div>
 
             <div class="col p-4">

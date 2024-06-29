@@ -48,7 +48,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
 }
 ?>
 
-  <h2 class="mt-3" style="text-align:center;">OUR 3-STAR HOTEL ROOMS</h2>
+  <h2 class="mt-3" style="text-align:center;">THE GRAND 3-STAR SINDHU HOTEL</h2>
   <div class=" mb-5" style="display:inline-block;vertical-align:top; width: fit-content; align-items: center;">
     <div class="row">
       <div class="col-lg-3">
@@ -73,13 +73,15 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
               <div class="border bg-light p-3 rounded shadow ml-auto mb-3 mt-3">
                 <h5 class="mb-3">FACILITIES</h5>
                 <div class="mb-2">
-                  <input type="checkbox" id="f1" class="form-check-input shadow-none me-1">
                   <label class="form-check-label" for="f1">Wifi</label>
                 </div>
                 <div class="mb-2">
-                  <input type="checkbox" id="f2" class="form-check-input shadow-none me-1">
-                  <label class="form-check-label" for="f2">food</label>
+                  <label class="form-check-label" for="f2">Free Breakfast</label>
                 </div>
+                <div class="mb-2">
+                  <label class="form-check-label" for="f2">Air conditioning</label>
+                </div>
+                
                 <!--<div class="mb-2">
                   <input type="checkbox" id="f3" class="form-check-input shadow-none me-1">
                   <label class="form-check-label" for="f3">swimmingpool</label>

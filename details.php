@@ -26,7 +26,10 @@
 
 <body>
   <?php require 'navv/navdet.php' ?>
+  <div style="background-color: #e7dfc6; padding: 20px; border-radius: 40px; display: grid; margin:20px;">
   <?php
+ 
+
 // Include the common database connection script
 require 'dbconnect.php';
 
@@ -48,6 +51,9 @@ if ($hotel_id > 0) {
         echo "<p><strong>Hotel ID:</strong> " . $row["hotel_id"] . "</p>";
         echo "<p><strong>Hotel Name:</strong> " . $row["hotel_name"] . "</p>";
         echo "<p><strong>Hotel Type:</strong> " . $row["hotel_type"] . "</p>";
+        echo "<p><strong>Hotel Staff:</strong> " . $row["hotel_staff"] . "</p>";
+        echo "<p><strong>Hotel contact:</strong> " . $row["contact"] . "</p>";
+        echo "<p><strong>Hotel Address:</strong> " . $row["hotel_address"] . "</p>";
         echo "<p><strong>Hotel City:</strong> " . $row["hotel_city"] . "</p>";
     } else {
         echo "No hotel found with the given ID.";
@@ -59,6 +65,7 @@ if ($hotel_id > 0) {
 // Close the database connection
 $conn->close();
 ?>
+</div>
   <?php require 'include/footer.php' ?>
 </body>
 </html>

@@ -16,11 +16,12 @@
 </head>
 <body>
 
-<?php require 'navv/nav2.php' ?>
+<?php require 'navv/navroomdet.php' ?>
+
 <div style="text-align: center;">
   <h2>YOUR SELECTED ROOM</h2>
 </div>
-<div style="background-color: #e7dfc6; padding: 20px; border-radius: 40px; display: grid;">
+<div style="background-color: #e7dfc6; padding: 20px; border-radius: 40px; display: grid; margin:0 20px;">
 <?php
 // Include the connection script
 include 'dbconnect.php';
@@ -46,12 +47,12 @@ if ($result->num_rows > 0) {
     // Fetch the room data
     $row = $result->fetch_assoc();
     echo "<h1>Room Details</h1>";
-    echo "<p>Room ID: " . $row["room_id"] . "</p>";
-    echo "<p>Hotel ID: " . $row["hotel_id"] . "</p>";
-    echo "<p>Room Number: " . $row["room_no"] . "</p>";
-    echo "<p>Type: " . $row["room_type"] . "</p>";
-    echo "<p>Price: ₹" . $row["room_price"] . "</p>";
-    echo "<p>Available: " . ($row["room_availability"] ? 'Yes' : 'No') . "</p>";
+    echo "<p><strong>Room ID: </strong>" . $row["room_id"] . "</p>";
+    echo "<p><strong> ID:</strong>" . $row["hotel_id"] . "</p>";
+    echo "<p><strong>Room Number: </strong>" . $row["room_no"] . "</p>";
+    echo "<p><strong>Type: </strong>" . $row["room_type"] . "</p>";
+    echo "<p><strong>Price: </strong>₹" . $row["room_price"] . "</p>";
+    echo "<p><strong>Available: </strong>" . ($row["room_availability"] ? 'Yes' : 'No') . "</p>";
     //echo "<p>Your check in date: " . $row["check_in_date"] . "</p>";
     //echo "<p>Your check out date: " . $row["check_out_date"] . "</p>";
 } else {
@@ -61,9 +62,9 @@ if ($result->num_rows > 0) {
 // Close the connection
 $conn->close();
 ?>
-
+</div>
 <div>
-  <h2>YOUR SELECTED ROOM HAS BEEN BOOKED</h2>
+  <h2 style="text-align:center;">YOUR SELECTED ROOM HAS BEEN BOOKED</h2>
 
 </div>
 

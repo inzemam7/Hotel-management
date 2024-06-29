@@ -47,7 +47,7 @@
   }
   ?>
 
-  <h2 class="mt-3" style="text-align:center;">OUR 1-STAR HOTEL ROOMS</h2>
+  <h2 class="mt-3" style="text-align:center;">AVANTHI HOTEL</h2>
  
   <div class=" mb-5" style="display:inline-block;vertical-align:top; width: fit-content; align-items: center;">
     <div class="row">
@@ -66,17 +66,18 @@
                 <div class="border bg-light p-3 rounded shadow ml-auto">
                   <h5 class="mb-3">CHECK AVAILABILITY</h5>
                   <label class="form-label">Check-in</label>
-                  <input type="date" class="form-control shadow none mb-3">
+                  <input type="date" name="checkin"class="form-control shadow none mb-3">
                   <label class="form-label">Check-out</label>
-                  <input type="date" class="form-control shadow none">
+                  <input type="date" name="checkout" class="form-control shadow none">
                 </div>
             </form>
+            
             <div class="border bg-light p-3 rounded shadow ml-auto mb-3 mt-3">
               <h5 class="mb-3">FACILITIES</h5>
               <div class="mb-2">
-                <input type="checkbox" id="f1" class="form-check-input shadow-none me-1">
-                <label class="form-check-label" for="f1">Wifi</label>
+                <label class="form-check-label" for="f1">Free Wifi</label>
               </div>
+              
               <!--<div class="mb-2">
                   <input type="checkbox" id="f2" class="form-check-input shadow-none me-1">
                   <label class="form-check-label" for="f2">food</label>
@@ -95,6 +96,7 @@
         window.location.href = 'user_dashboard.php?room_id=' + roomId;
       }
     </script>
+    
     <div class="col-lg-9 col-md-12 px-4" style="background-color: #e9f1f7;">
       <div class="card mb-4 border-0 shadow">
         <div class="row no-gutters p-3 aline-items-center">
@@ -156,6 +158,7 @@
       </div>
     </div>
   </div>
+
   <?php require 'include/footer.php' ?>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
