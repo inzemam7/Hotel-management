@@ -278,7 +278,7 @@
             <button class="buttonH"><a  class="anc" href="5star-rooms.php">BOOK A 5-STAR HOTEL</a></button>
         </div>
     </div>
-<div style="align-items: center; background-color: #e7dfc6; color: black; margin:50px; padding: 1rem; border-radius: 2rem; text-align:center;">
+<div style="align-items: center; background-color: #e7dfc6; color: black; margin:50px; display: inline-flex; padding: 1rem; border-radius: 2rem; text-align:center;">
     <?php
 // Include the common database connection script
 require 'dbconnect.php';

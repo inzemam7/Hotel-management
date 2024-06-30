@@ -22,6 +22,8 @@
   <h2>YOUR SELECTED ROOM</h2>
 </div>
 <div style="background-color: #e7dfc6; padding: 20px; border-radius: 40px; display: grid; margin:0 20px;">
+
+<!--php was here-->
 <?php
 // Include the connection script
 include 'dbconnect.php';
@@ -34,7 +36,10 @@ if ($room_id <= 0) {
     echo "Invalid room ID. or You might have not selected a room";
     exit;
 }
-
+//
+$checkin = isset($_POST['checkin']) ? $_POST['checkin'] : null;
+$checkout = isset($_POST['checkout']) ? $_POST['checkout'] : null;
+//
 // SQL to fetch the room details
 $sql = "SELECT room_id, hotel_id, room_no, room_type, room_price, room_availability FROM Room WHERE room_id = ?";
 $stmt = $conn->prepare($sql);
@@ -55,6 +60,12 @@ if ($result->num_rows > 0) {
     echo "<p><strong>Available: </strong>" . ($row["room_availability"] ? 'Yes' : 'No') . "</p>";
     //echo "<p>Your check in date: " . $row["check_in_date"] . "</p>";
     //echo "<p>Your check out date: " . $row["check_out_date"] . "</p>";
+    //
+    if ($checkin && $checkout) {
+      echo "<p><strong>Your check-in date: </strong>" . htmlspecialchars($checkin) . "</p>";
+      echo "<p><strong>Your check-out date: </strong>" . htmlspecialchars($checkout) . "</p>";
+  }
+  //
 } else {
     echo "No room found with the specified ID.";
 }

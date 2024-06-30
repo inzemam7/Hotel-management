@@ -61,15 +61,19 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
               aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
+            
+            <form action="user_dashboard.php?room_id=4" method="post">
             <div class="collapse navbar-collapse flex-column align-items-stretch mt-2" id="filterdropdown">
-              <div class="border bg-light p-3 rounded shadow ml-auto">
-                <h5 class="mb-3">CHECK AVAILABILITY</h5>
-                <label class="form-label">Check-in</label>
-                <input type="date" class="form-control shadow none mb-3">
-                <label class="form-label">Check-out</label>
-                <input type="date" class="form-control shadow none">
-              </div>
-
+            <div class="border bg-light p-3 rounded shadow ml-auto">
+                  <h5 class="mb-3">CHECK AVAILABILITY</h5>
+                  <label class="form-label">Check-in</label>
+                  <input type="date" name="checkin"class="form-control shadow none mb-3">
+                  <label class="form-label">Check-out</label>
+                  <input type="date" name="checkout" class="form-control shadow none">
+                  <button type="submit">SUBMIT</button>
+                </div>
+              </form>
+              
               <div class="border bg-light p-3 rounded shadow ml-auto mb-3 mt-3">
                 <h5 class="mb-3">FACILITIES</h5>
                 <div class="mb-2">

@@ -61,7 +61,7 @@
               aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <form action="">
+            <form action="user_dashboard.php?room_id=1" method="post">
               <div class="collapse navbar-collapse flex-column align-items-stretch mt-2" id="filterdropdown">
                 <div class="border bg-light p-3 rounded shadow ml-auto">
                   <h5 class="mb-3">CHECK AVAILABILITY</h5>
@@ -69,6 +69,7 @@
                   <input type="date" name="checkin"class="form-control shadow none mb-3">
                   <label class="form-label">Check-out</label>
                   <input type="date" name="checkout" class="form-control shadow none">
+                  <button type="submit">SUBMIT</button>
                 </div>
             </form>
             
