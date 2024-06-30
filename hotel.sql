@@ -31,6 +31,9 @@ CREATE TABLE `hotel` (
   `hotel_id` int(11) NOT NULL,
   `hotel_name` varchar(50) NOT NULL,
   `hotel_type` varchar(50) NOT NULL,
+  `hotel_staff` int(11) NOT NULL,
+  `contact` int(10) NOT NULL,
+  `hotel_address` varchar(255) NOT NULL,
   `hotel_city` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -38,10 +41,10 @@ CREATE TABLE `hotel` (
 -- Dumping data for table `hotel`
 --
 
-INSERT INTO `hotel` (`hotel_id`, `hotel_name`, `hotel_type`, `hotel_city`) VALUES
-(1, 'Hotel One', 'One star', 'Mahabubnagar'),
-(2, 'Hotel Two', 'Three star', 'Mahabubnagar'),
-(3, 'Hotel Three', 'Five star', 'Mahabubnagar');
+INSERT INTO `hotel` (`hotel_id`, `hotel_name`, `hotel_type`, `hotel_staff`,`contact`,`hotel_address`,`hotel_city`) VALUES
+(1, 'Hotel Avanthi', 'One star', '30','956478852','Rajendranagar, MBNR.','Mahabubnagar'),
+(2, 'Hotel Hotel Grand 3-Star Sindhu', 'Three star','50','845623457','Kidwaipet, MBNR.', 'Mahabubnagar'),
+(3, 'Hotel Hotel Marriott and Convention', 'Five star','150','796474654','Tankbund RD, OPP Hussain Sagar, Bhagyalaxminagar.', 'Hyderabad');
 
 --
 -- Indexes for dumped tables
