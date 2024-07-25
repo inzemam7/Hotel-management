@@ -110,6 +110,7 @@
               <h5 class="card-title">ECONOMIC</h5>
               <p class="card-text">Single Room: A compact, single-occupancy space with basic furnishings and shared or
                 en-suite bathroom options, ideal for solo travelers on a budget.</p>
+                <p> 2500 per night</p>
               <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
 
